@@ -8,7 +8,7 @@ datetime.now()
 
 client = discord.Client()
 
-channel = client.get_channel(972747503436976138)
+channel = client.get_channel(insert channel id)
 desTime = time(0)
 interval = 1
 startRun = 1
@@ -24,7 +24,7 @@ async def checkPackt(desTime, interval, startRun):
     else:
       embedVar = discord.Embed(title="Free Text Alert", description=message, color=0xFFA500)
       embedVar.set_image(url=image)
-      await client.get_channel(972747503436976138).send(embed=embedVar)
+      await client.get_channel(insert channel id).send(embed=embedVar)
       desTime = time(0)
       interval = 1
       startRun = 0
@@ -36,7 +36,7 @@ async def checkPackt(desTime, interval, startRun):
     else:
       embedVar = discord.Embed(title="Free Text Alert", description=message, color=0x00ff00)
       embedVar.set_image(url=image)
-      await client.get_channel(972747503436976138).send(embed=embedVar)
+      await client.get_channel(insert channel id).send(embed=embedVar)
       desTime = time(0)
       interval = 1
 
